@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - TechSpace</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="titlu-site">Tech<span>Space</span></div>
+        <div class="bara-cautare">
+            <input type="text" placeholder="Caută componente (ex: RTX 4060)...">
+            <button type="button">Caută</button>
+        </div>
+        <ul class="meniu-lista">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="contact.html" style="color: #9c27b0;">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Ia legătura cu noi</h2>
+            <p>Suntem aici să te ajutăm să alegi componentele perfecte pentru PC-ul tău. Ne poți suna sau ne poți lăsa un mesaj folosind formularul.</p>
+            <p><b>Adresă:</b> str. Studenților 9, Chișinău (UTM)</p>
+            <p><b>Telefon:</b> +373 60 123 456</p>
+            <p><b>Email:</b> suport@techspace.md</p>
+            <p><b>Program:</b> Luni - Vineri: 09:00 - 18:00</p>
+        </div>
+        
+        <form class="contact-form" action="procesare_contact.php" method="POST" id="formular-contact">
+            <input type="text" name="nume" id="nume" placeholder="Numele tău complet">
+            <input type="email" name="email" id="email" placeholder="Adresa ta de email">
+            <textarea name="mesaj" id="mesaj" rows="5" placeholder="Cu ce te putem ajuta?"></textarea>
+            <button type="submit" class="btn-adauga" style="padding: 15px; font-size: 16px;">Trimite Mesajul</button>
+        </form>
+        
+        <div id="mesaj-eroare" style="color: red; margin-top: 10px; font-weight: bold; display: none;"></div>
+    </div>
+<script src="JS/script.js"></script>
+
+</body>
+</html>

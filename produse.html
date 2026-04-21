@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Produse TechSpace - Magazin PC</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="header">
+            <div class="titlu-site">Tech<span>Space</span></div>
+            
+            <div class="bara-cautare">
+                <input type="text" placeholder="Caută componente (ex: RTX 4060)...">
+                <button type="button">Caută</button>
+            </div>
+
+            <ul class="meniu-lista">
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="produse.html">Produse</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    <div class="container-magazin">
+        
+        <aside class="sidebar-filtre">
+            <h3>Filtrează Produsele</h3>
+            
+            <div class="grup-filtru">
+                <h4>Categorii</h4>
+                <label class="optiune-filtru"><input type="checkbox" checked> Plăci Video (GPU)</label>
+                <label class="optiune-filtru"><input type="checkbox" checked> Procesoare (CPU)</label>
+                <label class="optiune-filtru"><input type="checkbox" checked> Memorii RAM</label>
+                <label class="optiune-filtru"><input type="checkbox" checked> Stocare SSD/HDD</label>
+                <label class="optiune-filtru"><input type="checkbox" checked> Plăci de bază</label>
+                <label class="optiune-filtru"><input type="checkbox"> Periferice</label>
+            </div>
+
+            <div class="grup-filtru">
+                <h4>Preț (MDL)</h4>
+                <input type="range" min="500" max="15000" value="15000">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 5px;">
+                    <span>500 MDL</span>
+                    <span>15.000+ MDL</span>
+                </div>
+            </div>
+
+            <div class="grup-filtru">
+                <h4>Producător</h4>
+                <label class="optiune-filtru"><input type="checkbox"> ASUS</label>
+                <label class="optiune-filtru"><input type="checkbox"> MSI</label>
+                <label class="optiune-filtru"><input type="checkbox"> AMD</label>
+                <label class="optiune-filtru"><input type="checkbox"> Intel</label>
+                <label class="optiune-filtru"><input type="checkbox"> Corsair</label>
+            </div>
+            
+            <button class="btn-adauga" style="width: 100%;">Aplică Filtrele</button>
+        </aside>
+
+        <main class="zona-produse">
+            <div class="header-rezultate">
+                <h2>Componente PC</h2>
+                <select class="custom-select">
+                    <option id="op1">Ordonează: Cele mai populare</option>
+                    <option id="op2">Preț: Crescător</option>
+                    <option id="op3">Preț: Descrescător</option>
+                </select>
+            </div>
+
+            <div class="grid-produse">
+                
+                <div class="card-produs">
+                    <div class="badge-nou">TOP</div>
+                    
+                    <a href="produs.html" class="imagine-produs">
+                        <img src="Images/asus.jpg" alt="ASUS RTX 4060">
+                    </a>
+                    
+                    <div class="categorie-text">Placă Video (GPU)</div>
+                    
+                    <a href="produs.html" style="text-decoration: none; color: inherit;">
+                        <div class="titlu-produs">ASUS Dual GeForce RTX 4060 OC 8GB</div>
+                    </a>
+                    
+                    <ul class="specificatii-lista">
+                        <li>Memorie: 8GB GDDR6 (128-bit)</li>
+                        <li>Frecvență Boost: 2535 MHz</li>
+                        <li>Tehnologii: DLSS 3, Ray Tracing</li>
+                        <li>Consum: 115W (Recomandat 550W)</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">7 600 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/rtx4070.png" alt="Gigabyte RTX 4070 Super"></div>
+                    <div class="categorie-text">Placă Video (GPU)</div>
+                    <div class="titlu-produs">GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC</div>
+                    <ul class="specificatii-lista">
+                        <li>Memorie: 12GB GDDR6X (192-bit)</li>
+                        <li>Frecvență Boost: 2505 MHz</li>
+                        <li>Răcire: 3 ventilatoare WINDFORCE</li>
+                        <li>Sursă recomandată: 700W</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">13 500 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="badge-nou">GAMING</div>
+                    <div class="imagine-produs"><img src="Images/amdryzen.png" alt="AMD Ryzen 7 7800X3D"></div>
+                    <div class="categorie-text">Procesor (CPU)</div>
+                    <div class="titlu-produs">AMD Ryzen 7 7800X3D</div>
+                    <ul class="specificatii-lista">
+                        <li>Nuclee/Thread-uri: 8 / 16</li>
+                        <li>Frecvență: 4.2 GHz (5.0 GHz Max Boost)</li>
+                        <li>Cache: 96MB L3 (3D V-Cache)</li>
+                        <li>TDP: 120W (Socket AM5)</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">8 900 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/inteli5.jpg" alt="Intel i5-14600K"></div>
+                    <div class="categorie-text">Procesor (CPU)</div>
+                    <div class="titlu-produs">Intel Core i5-14600K</div>
+                    <ul class="specificatii-lista">
+                        <li>Nuclee: 14 (6 P-Cores + 8 E-Cores)</li>
+                        <li>Thread-uri: 20</li>
+                        <li>Frecvență Max: 5.3 GHz</li>
+                        <li>Socket: LGA 1700</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">6 400 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/ssdsams.png" alt="Samsung 990 Pro"></div>
+                    <div class="categorie-text">Stocare SSD</div>
+                    <div class="titlu-produs">Samsung 990 Pro 1TB M.2 PCIe 4.0</div>
+                    <ul class="specificatii-lista">
+                        <li>Capacitate: 1 TB (NVMe M.2)</li>
+                        <li>Viteză citire: 7450 MB/s</li>
+                        <li>Viteză scriere: 6900 MB/s</li>
+                        <li>Durabilitate: 600 TBW</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">2 100 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/2tbssd.jpg" alt="WD Black SN850X"></div>
+                    <div class="categorie-text">Stocare SSD</div>
+                    <div class="titlu-produs">WD Black SN850X 2TB M.2 PCIe 4.0</div>
+                    <ul class="specificatii-lista">
+                        <li>Capacitate: 2 TB (NVMe M.2)</li>
+                        <li>Viteză citire: 7300 MB/s</li>
+                        <li>Viteză scriere: 6600 MB/s</li>
+                        <li>Optimizare Game Mode 2.0</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">3 400 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/corsair.png" alt="Corsair DDR5"></div>
+                    <div class="categorie-text">Memorie RAM</div>
+                    <div class="titlu-produs">Corsair Vengeance 32GB (2x16GB) DDR5</div>
+                    <ul class="specificatii-lista">
+                        <li>Capacitate: 32 GB Dual-Channel</li>
+                        <li>Frecvență: 6000 MHz</li>
+                        <li>Latență: CL36</li>
+                        <li>Profil: AMD EXPO & Intel XMP</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">2 400 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/kingstonRAM.jpg" alt="Kingston FURY"></div>
+                    <div class="categorie-text">Memorie RAM</div>
+                    <div class="titlu-produs">Kingston FURY Beast RGB 32GB DDR5</div>
+                    <ul class="specificatii-lista">
+                        <li>Capacitate: 32 GB (2x16GB)</li>
+                        <li>Frecvență: 6000 MHz</li>
+                        <li>Latență: CL36</li>
+                        <li>Iluminare: RGB Sincronizat</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">2 650 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/powersupply.png" alt="Seasonic 850W"></div>
+                    <div class="categorie-text">Sursă de alimentare</div>
+                    <div class="titlu-produs">Seasonic Focus GX, 80+ Gold, 850W</div>
+                    <ul class="specificatii-lista">
+                        <li>Putere: 850 W</li>
+                        <li>Eficiență: 80 PLUS Gold</li>
+                        <li>Modularitate: Complet Modulară</li>
+                        <li>Garanție producător: 10 ani</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">2 850 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/mate.png" alt="MSI Tomahawk"></div>
+                    <div class="categorie-text">Placă de bază</div>
+                    <div class="titlu-produs">MSI MAG B650 TOMAHAWK WIFI</div>
+                    <ul class="specificatii-lista">
+                        <li>Socket: AM5 (suport Ryzen 7000/8000)</li>
+                        <li>Format: ATX</li>
+                        <li>Sloturi RAM: 4x DDR5</li>
+                        <li>Rețea: Wi-Fi 6E, Bluetooth 5.3</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">4 200 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="imagine-produs"><img src="Images/asusmate.jpg" alt="ASUS TUF Z790"></div>
+                    <div class="categorie-text">Placă de bază</div>
+                    <div class="titlu-produs">ASUS TUF GAMING Z790-PLUS WIFI</div>
+                    <ul class="specificatii-lista">
+                        <li>Socket: LGA 1700 (Intel Gen 12/13/14)</li>
+                        <li>Format: ATX</li>
+                        <li>VRM: 16+1 DrMOS power stages</li>
+                        <li>Conectivitate: PCIe 5.0, 4x M.2</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">5 100 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+                <div class="card-produs">
+                    <div class="badge-nou">POPULAR</div>
+                    <div class="imagine-produs"><img src="Images/case.jpg" alt="NZXT H5 Flow"></div>
+                    <div class="categorie-text">Carcasă PC</div>
+                    <div class="titlu-produs">NZXT H5 Flow Black</div>
+                    <ul class="specificatii-lista">
+                        <li>Format: Mid Tower</li>
+                        <li>Panou lateral: Sticlă securizată</li>
+                        <li>Ventilatoare incluse: 2x 120mm</li>
+                        <li>Airflow: Panou frontal perforat</li>
+                    </ul>
+                    <div class="pret-container">
+                        <div class="pret">1 850 MDL</div>
+                        <button class="btn-adauga">Adaugă</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // --- 1. LIVE SEARCH BARA DE CĂUTARE ---
+    const produseDB = [
+        { id: 'rtx4060', titlu: 'ASUS Dual GeForce RTX 4060 OC 8GB', pret: '7 600 MDL', img: 'Images/asus.jpg' },
+        { id: 'rtx4070', titlu: 'GIGABYTE GeForce RTX 4070 SUPER', pret: '13 500 MDL', img: 'Images/rtx4070.png' },
+        { id: 'ryzen7', titlu: 'AMD Ryzen 7 7800X3D', pret: '8 900 MDL', img: 'Images/amdryzen.png' },
+        { id: 'i5', titlu: 'Intel Core i5-14600K', pret: '6 400 MDL', img: 'Images/inteli5.jpg' },
+        { id: 'ssd1', titlu: 'Samsung 990 Pro 1TB M.2', pret: '2 100 MDL', img: 'Images/ssdsams.png' },
+        { id: 'ssd2', titlu: 'WD Black SN850X 2TB M.2', pret: '3 400 MDL', img: 'Images/2tbssd.jpg' },
+        { id: 'ram1', titlu: 'Corsair Vengeance 32GB DDR5', pret: '2 400 MDL', img: 'Images/corsair.png' },
+        { id: 'ram2', titlu: 'Kingston FURY Beast RGB 32GB', pret: '2 650 MDL', img: 'Images/kingstonRAM.jpg' },
+        { id: 'sursa', titlu: 'Seasonic Focus GX, 850W', pret: '2 850 MDL', img: 'Images/powersupply.png' },
+        { id: 'mb1', titlu: 'MSI MAG B650 TOMAHAWK WIFI', pret: '4 200 MDL', img: 'Images/mate.png' },
+        { id: 'mb2', titlu: 'ASUS TUF GAMING Z790-PLUS', pret: '5 100 MDL', img: 'Images/asusmate.jpg' },
+        { id: 'case', titlu: 'NZXT H5 Flow Black', pret: '1 850 MDL', img: 'Images/case.jpg' }
+    ];
+
+    const searchInput = document.querySelector('.bara-cautare input');
+    const searchContainer = document.querySelector('.bara-cautare');
+
+    if (searchInput && searchContainer) {
+        searchContainer.style.position = 'relative'; // Fortam CSS-ul necesar din JS
+        
+        let dropdown = document.createElement('div');
+        // Adaugam stilurile direct aici ca sa nu depinzi de fisierul CSS
+        dropdown.style.cssText = 'position: absolute; top: 100%; left: 0; right: 0; background: white; border: 1px solid #ccc; border-radius: 4px; max-height: 250px; overflow-y: auto; z-index: 9999; display: none; flex-direction: column; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 5px;';
+        searchContainer.appendChild(dropdown);
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            dropdown.innerHTML = '';
+
+            if (query.length > 0) {
+                const filtered = produseDB.filter(p => p.titlu.toLowerCase().includes(query));
+                if (filtered.length > 0) {
+                    dropdown.style.display = 'flex';
+                    filtered.forEach(prod => {
+                        const a = document.createElement('a');
+                        a.href = `produs.html?id=${prod.id}`;
+                        a.style.cssText = 'padding: 10px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; text-decoration: none; color: black; cursor: pointer;';
+                        a.innerHTML = `
+                            <img src="${prod.img}" alt="img" style="width: 40px; height: 40px; object-fit: contain;">
+                            <div>
+                                <div style="font-weight: bold; font-size: 14px;">${prod.titlu}</div>
+                                <div style="color: #9c27b0; font-size: 12px;">${prod.pret}</div>
+                            </div>
+                        `;
+                        a.onmouseover = () => a.style.backgroundColor = '#f4f5f7';
+                        a.onmouseout = () => a.style.backgroundColor = 'white';
+                        dropdown.appendChild(a);
+                    });
+                } else {
+                    dropdown.style.display = 'none';
+                }
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!searchContainer.contains(e.target)) dropdown.style.display = 'none';
+        });
+    }
+
+    // --- 2. UPDATE TEXT SLIDER PREȚ ---
+    const priceInput = document.querySelector('.grup-filtru input[type="range"]');
+    const priceDisplay = document.querySelector('.grup-filtru div span:last-child');
+    if (priceInput && priceDisplay) {
+        priceInput.addEventListener('input', (e) => {
+            priceDisplay.innerText = `${e.target.value} MDL`;
+        });
+    }
+
+    // --- 3. FUNCȚIONALITATE APLICĂ FILTRE ---
+    const btnFiltre = document.querySelector('.sidebar-filtre .btn-adauga');
+    if (btnFiltre) {
+        btnFiltre.addEventListener('click', (e) => {
+            e.preventDefault();
+            const maxPrice = parseInt(priceInput.value);
+            const checkboxes = document.querySelectorAll('.grup-filtru:nth-child(2) input[type="checkbox"]:checked');
+            const selectedCategories = Array.from(checkboxes).map(cb => cb.parentElement.innerText.trim().toLowerCase());
+            
+            const produse = document.querySelectorAll('.card-produs');
+            produse.forEach(prod => {
+                const pretVal = parseInt(prod.querySelector('.pret').innerText.replace(/\s/g, '').replace('MDL', ''));
+                const categorie = prod.querySelector('.categorie-text').innerText.toLowerCase();
+                
+                const matchPrice = pretVal <= maxPrice;
+                let matchCat = selectedCategories.length === 0;
+
+                selectedCategories.forEach(cat => {
+                    if (cat.includes('video') && categorie.includes('video')) matchCat = true;
+                    if (cat.includes('procesoare') && categorie.includes('procesor')) matchCat = true;
+                    if (cat.includes('ram') && categorie.includes('ram')) matchCat = true;
+                    if (cat.includes('stocare') && categorie.includes('stocare')) matchCat = true;
+                    if (cat.includes('bază') && categorie.includes('bază')) matchCat = true;
+                });
+
+                prod.style.display = (matchPrice && matchCat) ? 'block' : 'none';
+            });
+        });
+    }
+
+    // --- 4. ORDONARE PRODUSE ---
+    const selectOrdonare = document.querySelector('.custom-select');
+    const gridProduse = document.querySelector('.grid-produse');
+    if (selectOrdonare && gridProduse) {
+        const produseInitiale = Array.from(gridProduse.children);
+        selectOrdonare.addEventListener('change', (e) => {
+            const opt = e.target.value;
+            let arr = Array.from(gridProduse.children);
+
+            if (opt === 'Preț: Crescător') {
+                arr.sort((a, b) => parseInt(a.querySelector('.pret').innerText.replace(/\s/g, '')) - parseInt(b.querySelector('.pret').innerText.replace(/\s/g, '')));
+            } else if (opt === 'Preț: Descrescător') {
+                arr.sort((a, b) => parseInt(b.querySelector('.pret').innerText.replace(/\s/g, '')) - parseInt(a.querySelector('.pret').innerText.replace(/\s/g, '')));
+            } else {
+                arr = [...produseInitiale];
+            }
+            gridProduse.innerHTML = '';
+            arr.forEach(p => gridProduse.appendChild(p));
+        });
+    }
+});
+</script>
+
+</body>
+</html>
